@@ -1,0 +1,19 @@
+
+.dsn-item-post {
+  border-top-right-radius: 0;
+
+  .box-image-bg {
+    height: 450px;
+  }
+
+  .content {
+
+      &.pb-0 {
+        padding-bottom: 0;
+      }
+      
+      .date {
+          font-size: 13px;
+      }
+  }
+}

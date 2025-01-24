@@ -1,0 +1,21 @@
+.dsn-award {
+  .award-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid $border-color;
+
+    &:not(:first-of-type) {
+      padding-bottom: 30px;
+    }
+
+    .date {
+      padding-top: 6px;
+    }
+
+    img {
+      height: 100px;
+    }
+
+  }
+
+}

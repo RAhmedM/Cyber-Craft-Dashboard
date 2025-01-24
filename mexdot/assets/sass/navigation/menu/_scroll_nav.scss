@@ -1,0 +1,11 @@
+&.nav-bg {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @include dsnSetMedia(max, 600) {
+    top: 0;
+  }
+}
+
+&.hide-nav:not(.dsn-open) {
+  transform: translateY(-170%);
+}

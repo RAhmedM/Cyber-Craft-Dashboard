@@ -1,0 +1,144 @@
+/* -------------------------------------------------------
+                   Footer
+-------------------------------------------------------- */
+.footer {
+  position: relative;
+
+  .logo-wrap {
+    background-color: $bg-color;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    position: relative;
+    top: -60px;
+
+    @include media_991 {
+      top: auto;
+      border-radius: 0;
+      background-color: transparent;
+      height: auto;
+      align-items: baseline;
+    }
+
+    .logo {
+      justify-content: center;
+      align-items: center;
+      width: 110px;
+    }
+
+    .shape-one , .shape-two {
+      position: absolute;
+      top: 0;
+
+      @include media_991 {
+        display: none;
+      }
+
+      path {
+        fill: $bg-color;
+      }
+
+      &.shape-one {
+        left: -30px;
+      }
+  
+      &.shape-two {
+        right: -30px;
+      }
+    }
+
+  }
+
+  .footer-links {
+    ul {
+      li {
+        font-size: 14px;
+
+        &:not(:last-of-type) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    padding: 30px 0;
+
+    @include media_991 {
+      margin-top: 30px;
+    }
+
+    @include media_575() {
+      > .container{
+        flex-direction: column;
+        align-items: flex-start;
+        .dsn-default-btn{
+          order: -1;
+        }
+      }
+    }
+
+    p {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .dsn-default-btn {
+      .dsn-icon {
+        rotate: 180deg;
+      }
+    }
+  }
+}
+
+.footer-personal {
+  border-radius: 100px;
+  padding: 30px;
+
+  @include media_768 {
+    border-radius: 10px;
+
+    .d-grid.grid-md-3 {
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+    }
+  }
+
+  .links {
+    ul {
+      li {
+        color: $heading-color;
+        font-size: 14px;
+
+        &:not(:first-of-type) {
+          margin-left: 20px;
+        }
+      }
+
+      @include media_768 {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+
+    @include media_768 {
+      order: 2;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .copyright {
+    font-size: 14px;
+    text-align: right;
+
+    @include media_768 {
+      order: 3;
+      text-align: center;
+    }
+  }
+}

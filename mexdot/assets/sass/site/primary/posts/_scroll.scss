@@ -1,0 +1,38 @@
+
+.dsn-item-post {
+  border-radius: 15px;
+
+  .post-info{
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @include media_768 {
+      flex-direction: column;
+      align-items: baseline;
+    }
+  }
+
+  .img-cat {
+    .box-image-bg {
+      height: 80vh;
+    }
+
+  }
+
+  .dsn-btn-shape{
+    justify-self: flex-end;
+  }
+
+  .post-content {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    padding: 20px;
+    border-radius: 5px;
+
+    .cat {
+      padding: 0;
+    }
+  }
+}

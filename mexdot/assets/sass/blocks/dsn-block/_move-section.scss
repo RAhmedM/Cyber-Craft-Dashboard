@@ -1,0 +1,162 @@
+.section-move-image {
+
+  &:not(.award-move) {
+    @include media_991(min) {
+      --dsn-width-item: 3;
+      --dsn-col-item: 30px;
+      --dsn-row-item: 30px;
+    }
+
+    @include media_991() {
+      --dsn-width-item: 2.5;
+      --dsn-col-item: 20px;
+      --dsn-row-item: 20px;
+    }
+
+    @include media_768 {
+      --dsn-width-item: 1.5;
+    }
+  }
+
+  &.award-move {
+
+    --dsn-col-item: 0px;
+
+    &.border-top-0 .grid-item {
+      border-top: 0;
+    }
+
+    &:not(.award-move-text) {
+      @include media_991(min) {
+        --dsn-width-item: 5;
+      }
+
+      @include media_768X991() {
+        --dsn-width-item: 4;
+      }
+
+      @include media_768() {
+        --dsn-width-item: 3;
+      }
+
+      @include media_575() {
+        --dsn-width-item: 2 !important;
+      }
+    }
+
+    &.award-move-text {
+      @include media_991(min) {
+        --dsn-width-item: 3.5;
+      }
+
+      @include media_768X991() {
+        --dsn-width-item: 3;
+      }
+
+      @include media_768() {
+        --dsn-width-item: 2.5;
+      }
+    }
+
+
+
+    .grid-item {
+      display: flex;
+      align-items: center;
+
+      &:not(.justify-content-center) {
+        justify-content: space-between;
+      }
+
+      flex-wrap: nowrap;
+
+      &.border-style:not(&:last-child) {
+        border-right: 0;
+      }
+    }
+  }
+
+
+}
+
+.seat-section {
+  .box-img {
+    img {
+      border-radius: 0 30px 30px 0;
+    }
+  }
+}
+
+.seat-section {
+  .content {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.09);
+
+    .section-title.justify-content-between {
+      @include media_768 {
+        .title {
+          order: 1;
+        }
+         
+        p {
+          order: 2;
+          margin-top: 30px;
+        }
+      }
+      
+    }
+  }
+}
+
+.img-under-header {
+  .grid-item {
+    height: 380px;
+
+    @include media_768 {
+      height: 280px;
+    }
+  }
+
+  .box-text {
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 60px 100px;
+
+    @include media_768 {
+      padding: 40px;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}
+
+.box-move {
+  .info {
+    .info-item {
+      padding-bottom: 30px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+
+      .date {
+        width: 90px;
+      }
+
+      .sm-title-block {
+        width: 60%;
+        font-family: $body-font;
+        font-size: 15px;
+      }
+
+      .icon {
+        margin-left: auto;
+
+        svg {
+          width: 10px;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.next-page {
+    .tob-box {
+        @include media_575 {
+            flex-direction: column;
+            align-items: baseline;
+            
+            .title {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

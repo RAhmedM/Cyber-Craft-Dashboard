@@ -1,0 +1,169 @@
+.dsn-brand {
+  .box-title {
+    .awards-box {
+      padding: 20px;
+    }
+    
+    .text {
+      h5 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .item {
+      position: relative;
+      mask-position: top;
+      mask-size: cover;
+
+      &:first-of-type {
+        mask-image: url(../img/shape-awards.svg);
+      }
+
+      &:last-of-type {
+        mask-image: url(../img/shape-awards2.svg);
+      }
+
+      @include media_768 {
+        mask-image: none !important;
+      }
+
+      .item-inner {
+        padding: 15px 20px;
+        min-height: 250px;
+
+        @include media_768 {
+          border-radius: 10px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  &.brand-radu {
+
+    .brand-inner {
+      @include media_768 {
+
+        .brand-boxs {
+          display: grid;
+          grid-column-gap: 30px;
+          grid-row-gap: 30px;
+          grid-template-columns: repeat(2, 1fr);
+
+          .brand-item {
+            aspect-ratio: auto;
+            border-radius: 0;
+            margin: 0;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+    .brand-item {
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+    
+      @include media_768 {
+        min-height: 180px;
+      }
+  
+      &.brand-item-lg {
+        width: 100%;
+  
+        img {
+          max-width: 140px;
+        }
+      }
+  
+      &.brand-item-sm {
+        height: 120px;
+  
+        @include media_768 {
+          height: 180px;
+        }
+  
+        img {
+          width: 70px;
+        }
+      }
+  
+    }
+  }
+
+  .brand-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+  }
+
+  .brand-item-inner {
+    width: 175px;
+    margin: auto;
+    img {
+      margin: auto;
+    }
+  }
+}
+
+.v-dark {
+  .brand-item {
+    img {
+      filter: invert(1);
+    }
+  }
+}
+
+.box-brands {
+  @include media_991 {
+    border: 0;
+    width: 100%;
+  }
+
+  .brand-inner {
+    padding-left: 30px;
+
+    @include media_991 {
+      border: 0;
+      padding-left: 0;
+    }
+
+    .brand-item {
+      padding: 30px 0;
+      display: flex;
+      align-items: center;
+
+      @include media_991 {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.brand-scroll{
+  text-align: center;
+  overflow: hidden;
+    .brand-title{
+      font-size: 350px;
+      line-height: 250px;
+      opacity: 0.1;
+      text-transform: uppercase;
+    }
+
+}
+
+.brand-scroll {
+  .brand-item {
+    min-height: 250px;
+  }
+}

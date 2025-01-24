@@ -1,0 +1,2139 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/img/logo-32x32.png" sizes="32x32" />
+    <link rel="icon" href="assets/img/logo-192x192.png" sizes="192x192" />
+
+    <title>MexDot - Ajax Portfolio Showcase HTML Template</title>
+
+    <link href="assets/css/plugins.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="v-light dsn-ajax">
+    <div id="dsn_preloader" class="preloader">
+      <div class="dsnload p-absolute">
+        <span class="dsnload__row">
+          <span class="dsnload__img">
+            <img
+              src="assets/img/logo-light.png"
+              class="logo-dark"
+              alt="Exfolio"
+              decoding="async"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/logo.png"
+              class="logo-light"
+              alt="Exfolio"
+              decoding="async"
+              loading="lazy"
+            />
+          </span>
+        </span>
+        <span class="dsnload__row dsnload__row--sibling">
+          <span class="dsnload__img">
+            <img
+              src="assets/img/logo-light.png"
+              class="logo-dark"
+              alt="Exfolio"
+              decoding="async"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/logo.png"
+              class="logo-light"
+              alt="Exfolio"
+              decoding="async"
+              loading="lazy"
+            />
+          </span>
+        </span>
+        <span class="dsnload__row dsnload__row--sibling">
+          <span class="dsnload__img">
+            <img
+              src="assets/img/logo-light.png"
+              class="logo-dark"
+              alt="Exfolio"
+              decoding="async"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/logo.png"
+              class="logo-light"
+              alt="Exfolio"
+              decoding="async"
+              loading="lazy"
+            />
+          </span>
+        </span>
+        <span class="dsnload__row dsnload__row--sibling">
+          <span class="dsnload__img">
+            <img
+              src="assets/img/logo-light.png"
+              class="logo-dark"
+              alt="Exfolio"
+              decoding="async"
+              loading="lazy"
+            />
+            <img
+              src="assets/img/logo.png"
+              class="logo-light"
+              alt="Exfolio"
+              decoding="async"
+              loading="lazy"
+            />
+          </span>
+        </span>
+      </div>
+
+      <div class="logo-box v-middle">
+        <h3 class="title text-upper">Exfolio</h3>
+      </div>
+
+      <div class="loading-count">
+        <p>0</p>
+      </div>
+
+      <span class="loading-text text-uppercase mt-30 dsn-container"
+        >Loading ...</span
+      >
+      <div
+        class="bg-load background-section d-flex align-items-end dsn-bg-pattern bg-offset bg-square"
+      >
+        <svg
+          class="dsn-separator-bottom dsn-icon-assistant-color"
+          width="100%"
+          height="100%"
+          viewBox="0 0 100 10"
+          preserveAspectRatio="none"
+        >
+          <path
+            class="path-anim separator__path"
+            data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z"
+            vector-effect="non-scaling-stroke"
+            d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <svg width="0" height="0" class="p-absolute hidden">
+      <defs>
+        <filter id="buttonFilter">
+          <feGaussianBlur
+            in="SourceGraphic"
+            stdDeviation="5"
+            result="blur"
+          ></feGaussianBlur>
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="buttonFilter"
+          ></feColorMatrix>
+          <feComposite
+            in="SourceGraphic"
+            in2="buttonFilter"
+            operator="atop"
+          ></feComposite>
+          <feBlend in="SourceGraphic" in2="buttonFilter"></feBlend>
+        </filter>
+      </defs>
+    </svg>
+
+    <main id="main_root" class="main-root">
+      <!-- ========== Menu ========== -->
+      <header id="site_menu_header" class="site-header d-none">
+        <div class="main-logo">
+          <a
+            href="index.html"
+            data-dsn-text="EXFOLIO"
+            class="custom-logo-link main-brand effect-ajax"
+            rel="home"
+            aria-current="page"
+          >
+            <img
+              src="assets/img/logo-light.png"
+              class="custom-logo logo-light"
+              alt="EXFOLIO"
+            />
+            <img
+              src="assets/img/logo.png"
+              class="custom-logo logo-dark"
+              alt="EXFOLIO"
+            />
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <div class="menu-cover-title header-container dsn-container">
+            MENU
+          </div>
+          <ul id="dsn-primary-list" class="primary-nav h2">
+            <li class="nav-item has-sub-menu">
+              <a title="Home" href="#0">
+                <span class="overflow">Home</span>
+              </a>
+              <ul class="nav-item">
+                <li class="dsn-back">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="30px"
+                      viewBox="0 0 400.004 400.004"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"
+                        />
+                      </g>
+                    </svg>
+                    <span class="text-toggle-back">
+                      <span class="text-name">Home</span>
+                      <span class="text-back">Back</span>
+                    </span>
+                  </span>
+                </li>
+                <li class="nav-item">
+                  <a title="Home" href="index.html">
+                    <span class="overflow">Main Demo</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="Corporate"
+                    href="corporate.html"
+                    data-dsn-text="Corporate"
+                  >
+                    <span class="overflow">Corporate</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="Architecture"
+                    href="architecture.html"
+                    data-dsn-text="Architecture"
+                  >
+                    <span class="overflow">Architecture</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="Creative"
+                    href="creative.html"
+                    data-dsn-text="Creative"
+                  >
+                    <span class="overflow">Creative</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="Photographer"
+                    href="photography.html"
+                    data-dsn-text="Photographer"
+                  >
+                    <span class="overflow">Photographer</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="Freelancer"
+                    href="freelancer.html"
+                    data-dsn-text="Freelancer"
+                  >
+                    <span class="overflow">Freelancer</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="Personal"
+                    href="personal.html"
+                    data-dsn-text="Personal"
+                  >
+                    <span class="overflow">Personal</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-sub-menu">
+              <a title="Home" href="#0">
+                <span class="overflow">Portfolio</span>
+              </a>
+              <ul class="nav-item">
+                <li class="dsn-back">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="30px"
+                      viewBox="0 0 400.004 400.004"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"
+                        />
+                      </g>
+                    </svg>
+                    <span class="text-toggle-back">
+                      <span class="text-name">Portfolio</span>
+                      <span class="text-back">Back</span>
+                    </span>
+                  </span>
+                </li>
+
+                <li class="nav-item has-sub-menu">
+                  <a title="Card" href="#0" data-dsn-text="Portfolio">
+                    <span class="overflow">Card</span>
+                  </a>
+                  <ul class="nav-item">
+                    <li class="dsn-back">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          x="0px"
+                          y="0px"
+                          width="30px"
+                          viewBox="0 0 400.004 400.004"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <path
+                              d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="text-toggle-back">
+                          <span class="text-name">Card</span>
+                          <span class="text-back">Back</span>
+                        </span>
+                      </span>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        title="Card 2 columns"
+                        href="work.html"
+                        data-dsn-text="Our Portfolio"
+                      >
+                        <span class="overflow">2 columns</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        title="Card 2 columns"
+                        href="work-3.html"
+                        data-dsn-text="Our Portfolio"
+                      >
+                        <span class="overflow">2 columns Style 2</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item has-sub-menu">
+                  <a
+                    title=">Work massonary"
+                    href="#0"
+                    data-dsn-text="Portfolio"
+                  >
+                    <span class="overflow">massonary</span>
+                  </a>
+                  <ul class="nav-item">
+                    <li class="dsn-back">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          x="0px"
+                          y="0px"
+                          width="30px"
+                          viewBox="0 0 400.004 400.004"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <path
+                              d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="text-toggle-back">
+                          <span class="text-name">Massonary</span>
+                          <span class="text-back">Back</span>
+                        </span>
+                      </span>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        title="Massonary 2 columns"
+                        href="work-5.html"
+                        data-dsn-text="Our Portfolio"
+                      >
+                        <span class="overflow">Massonary 2 columns</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        title="Massonary 3 columns"
+                        href="work-4.html"
+                        data-dsn-text="Our Portfolio"
+                      >
+                        <span class="overflow">Massonary 3 columns</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    title="Hover"
+                    href="work-hover.html"
+                    data-dsn-text="Portfolio"
+                  >
+                    <span class="overflow">Hover</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    title="horizontal Scroll"
+                    href="work-horizontal-scroll.html"
+                    data-dsn-text="Portfolio"
+                  >
+                    <span class="overflow">horizontal Scroll</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    title="Carousel"
+                    href="work-2.html"
+                    data-dsn-text="Portfolio"
+                  >
+                    <span class="overflow">Carousel</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-sub-menu">
+              <a title="Home" href="#0">
+                <span class="overflow">Works</span>
+              </a>
+              <ul class="nav-item">
+                <li class="dsn-back">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="30px"
+                      viewBox="0 0 400.004 400.004"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z"
+                        />
+                      </g>
+                    </svg>
+                    <span class="text-toggle-back">
+                      <span class="text-name">Works</span>
+                      <span class="text-back">Back</span>
+                    </span>
+                  </span>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="Binge x The Iconic"
+                    href="project-1.html"
+                    data-dsn-text="Binge x The Iconic"
+                  >
+                    <span class="overflow">Binge x The Iconic</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="Me Myself and i"
+                    href="project-2.html"
+                    data-dsn-text="Me Myself and i"
+                  >
+                    <span class="overflow">Me Myself and i</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="YOUR DREAM CAR"
+                    href="project-3.html"
+                    data-dsn-text="YOUR DREAM CAR"
+                  >
+                    <span class="overflow">YOUR DREAM CAR</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="The Hills - Nissan"
+                    href="project-4.html"
+                    data-dsn-text="The Hills - Nissan"
+                  >
+                    <span class="overflow">The Hills - Nissan</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="Church Copenhagen Denmark"
+                    href="project-5.html"
+                    data-dsn-text="Church Copenhagen Denmark"
+                  >
+                    <span class="overflow">Church Copenhagen Denmark</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="LOST RENDER"
+                    href="project-6.html"
+                    data-dsn-text="LOST RENDER"
+                  >
+                    <span class="overflow">LOST RENDER</span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    title="Samokat office"
+                    href="project-7.html"
+                    data-dsn-text="Samokat office"
+                  >
+                    <span class="overflow">Samokat office</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a title="About" href="about.html">
+                <span class="overflow">About</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a title="Contact" href="contact.html">
+                <span class="overflow">Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <div
+            class="container-content d-flex flex-column justify-content-center section-margin"
+          >
+            <div class="nav__info">
+              <div class="nav-content">
+                <h5 class="sm-title-block mb-10">Studio</h5>
+                26-30 New Damietta El-Mahalla El-Kubra, SK1 66LM
+              </div>
+              <div class="nav-content mt-30">
+                <h5 class="sm-title-block mb-10">Contact</h5>
+                <p class="links over-hidden mb-1">
+                  <a
+                    class="link-hover d-block"
+                    href="tel:00201004392260"
+                    data-hover-text="+00 (2)012 3321"
+                    >+00 (2)01004392260</a
+                  >
+                  <a
+                    class="link-hover"
+                    href="tel:00201024552406"
+                    data-hover-text="+00 (2)012 3321"
+                    >+00 (2)01024552406</a
+                  >
+                </p>
+                <p class="links over-hidden">
+                  <a
+                    class="link-hover"
+                    href="mailto:info@dsngrid.com"
+                    data-hover-text="info@dsngrid.com"
+                    >info@dsngrid.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="nav-social nav-content mt-30">
+              <div class="nav-social-inner p-relative">
+                <h5 class="sm-title-block mb-10">Follow us</h5>
+                <ul style="--dsn-li-name: dsn6">
+                  <li style="--dsn-li-index: 0">
+                    <a
+                      href="#0"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      >Dribbble.</a
+                    >
+                  </li>
+                  <li style="--dsn-li-index: 1">
+                    <a
+                      href="#0"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      >Behance.</a
+                    >
+                  </li>
+                  <li style="--dsn-li-index: 2">
+                    <a
+                      href="#0"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      >Linkedin.</a
+                    >
+                  </li>
+                  <li style="--dsn-li-index: 3">
+                    <a
+                      href="#0"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      >Twitter.</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div id="navbar_toggle" class="navbar-toggle">
+          <div class="toggle-icon">
+            <div class="toggle-line"></div>
+            <div class="toggle-line"></div>
+            <div class="toggle-line"></div>
+          </div>
+          <div class="toggle-text">
+            <div class="text-menu">Menu</div>
+            <div class="text-open">Open</div>
+            <div class="text-close">Close</div>
+          </div>
+        </div>
+        <div class="bg-load background-main"></div>
+
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          class="bg-load dsn-svg-transition"
+        >
+          <path
+            vector-effect="non-scaling-stroke"
+            d="M 0 100 V 100 Q 50 100 100 100 V 100 z"
+          />
+        </svg>
+      </header>
+      <!-- ========== End Menu ========== -->
+
+      <div id="dsn-scrollbar">
+        <!-- ========== Header ========== -->
+        <header
+          id="dsn_header"
+          class="header-sm-personal v-dark-head-mobile dsn-header-animation"
+        >
+          <div
+            class="content d-flex flex-column justify-content-center align-items-center h-100-v"
+          >
+            <h1 class="title-lg text-upper scale-span">
+              <span>Digital</span>
+              <img
+                src="assets/img/hero-img.webp"
+                alt=""
+                class="cover-bg-img d-inline-block"
+              />
+              <span>designer</span>
+            </h1>
+
+            <p class="text-center text-align-center max-w350 mt-30">
+              Hey there , I'm Noah Reeves, a digital designer with a passion for
+              transforming ideas into captivating visual experiences.
+            </p>
+
+            <div class="dsn-btn dsn-btn-shape d-flex mt-30">
+              <a
+                class="button background-section v-dark effect-ajax"
+                href="about.html"
+              >
+                <span
+                  class="title-btn text-upper p-relative z-index-1 heading-color"
+                  data-animate-text="About Me"
+                >
+                  <span>About Me</span>
+                </span>
+              </a>
+
+              <span class="icon background-section v-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path
+                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="footer-head w-100 left-0 p-absolute bottom-0 z-index-2 pb-40"
+          >
+            <div class="container d-flex justify-content-between">
+              <div class="dsn-btn dsn-btn-shape rotate-icon d-flex">
+                <a
+                  class="button background-section"
+                  href="#page_wrapper"
+                  rel="nofollow"
+                  data-dsn-option='{"ease": "power4.inOut" , "duration" : 1.5}'
+                >
+                  <span
+                    class="title-btn text-upper p-relative z-index-1 heading-color"
+                    data-animate-text="Scroll Down"
+                  >
+                    <span>Scroll Down</span>
+                  </span>
+                </a>
+
+                <span class="icon background-section">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+
+              <div class="dsn-btn dsn-btn-shape d-flex">
+                <a
+                  class="button background-section effect-ajax"
+                  href="contact.html"
+                  data-dsn-text="Contact Mes"
+                >
+                  <span
+                    class="title-btn text-upper p-relative z-index-1 heading-color"
+                    data-animate-text="Contact Me"
+                  >
+                    <span>Contact Me</span>
+                  </span>
+                </a>
+
+                <span class="icon background-section">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- ========== End Header ========== -->
+
+        <div id="page_wrapper" class="wrapper">
+          <!-- ========== About Us ========== -->
+          <section class="about-personal background-section section-padding">
+            <div class="container">
+              <div class="content p-relative">
+                <h2 class="title text-upper mt-20 dsn-fill">
+                  I CRAFT WONDERFUL <br />
+                  DIGITAL EXPERIENCES <br />
+                  FOR BRANDS
+                </h2>
+
+                <svg
+                  class="svg-arrow p-absolute dsn-up"
+                  width="168"
+                  height="168"
+                  viewBox="0 0 168 168"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2611_728)">
+                    <mask
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="168"
+                      height="168"
+                    >
+                      <path
+                        d="M168 168L168 0L0 -7.34351e-06L-7.34351e-06 168L168 168Z"
+                        fill="white"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_2611_728)">
+                      <path
+                        d="M-1.14418e-07 2.61757C0.00188117 1.9525 0.256151 1.31293 0.711416 0.828103C1.16668 0.343275 1.789 0.0493324 2.45264 0.0056675C3.11628 -0.0379968 3.77178 0.171871 4.28665 0.592868C4.80151 1.01386 5.13738 1.6146 5.22638 2.27369C5.39176 3.48382 22.9163 123.719 136.814 142.201C137.503 142.314 138.118 142.693 138.526 143.258C138.932 143.823 139.099 144.526 138.988 145.215C138.876 145.902 138.496 146.517 137.931 146.924C137.366 147.331 136.663 147.498 135.974 147.386C18.186 128.271 0.191629 4.22145 0.0236293 2.97195C0.00791771 2.85447 2.05536e-05 2.73608 -1.14418e-07 2.61757Z"
+                        fill="#3D3D3D"
+                      />
+                      <path
+                        d="M166 146.993C154.224 150.202 139.441 156.155 130 163L138.587 144.6L133.346 125C141.449 133.374 154.966 141.791 166 146.993Z"
+                        fill="#3D3D3D"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath>
+                      <rect
+                        width="168"
+                        height="168"
+                        fill="white"
+                        transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <div class="w-50 ml-auto">
+                  <p class="max-w570 mt-30 dsn-up">
+                    OUR EXPERTISE IS THE CORNERSTONE OF OUR SUCCESS. WITH YEARS
+                    OF EXPERIENCE IN WEB DESIGN, DEVELOPMENT, AND BRANDING,
+                    WE'VE HONED OUR SKILLS TO PERFECTION.
+                  </p>
+
+                  <div class="dsn-up">
+                    <div class="dsn-btn dsn-btn-shape d-flex mt-30">
+                      <a
+                        class="button background-main v-dark effect-ajax"
+                        href="about.html"
+                      >
+                        <span
+                          class="title-btn text-upper p-relative z-index-1 heading-color"
+                          data-animate-text="About Me"
+                        >
+                          <span>About Me</span>
+                        </span>
+                      </a>
+
+                      <span class="icon background-main v-dark">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 384 512"
+                        >
+                          <path
+                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="box-brands mt-50 border-top border-bottom dsn-swiper dsn-up"
+                data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":false,"parallax":false,"slidesPerView":5,"speed":1000,"effect":"slide"}'
+              >
+                <div class="d-grid custom-width align-items-center">
+                  <div class="box-title">
+                    <h6>
+                      WORKED WITH GLOBAL <br />
+                      LARGEST BRANDS
+                    </h6>
+                  </div>
+
+                  <div class="brand-inner border-left p-relative">
+                    <div class="swiper swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide brand-item">
+                          <img src="assets/img/brand/1.svg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide brand-item">
+                          <img src="assets/img/brand/2.svg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide brand-item">
+                          <img src="assets/img/brand/3.svg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide brand-item">
+                          <img src="assets/img/brand/5.svg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide brand-item">
+                          <img src="assets/img/brand/6.svg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide brand-item">
+                          <img src="assets/img/brand/1.svg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide brand-item">
+                          <img src="assets/img/brand/2.svg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide brand-item">
+                          <img src="assets/img/brand/3.svg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide brand-item">
+                          <img src="assets/img/brand/5.svg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide brand-item">
+                          <img src="assets/img/brand/6.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ========== End About Us ========== -->
+
+          <!-- ==========  Service ========== -->
+          <section
+            class="dsn-service services-accordion section-margin not-filter dsn-filter"
+          >
+            <div class="container">
+              <div class="section-title dsn-fill d-flex flex-column mb-70">
+                <span class="sub-heading mb-5">SERVICES</span>
+                <h2 class="title">Find a service</h2>
+              </div>
+
+              <div class="services-inner dsn-accordion">
+                <div class="accordion__wrapper">
+                  <div class="accordion__item dsn-up active">
+                    <div
+                      class="accordion__question user-no-selection d-flex align-items-center justify-content-between"
+                    >
+                      <h2
+                        class="title tab-title heading-color text-upper"
+                        role="tab"
+                        data-tab="0"
+                      >
+                        UI/UX
+                      </h2>
+
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="17"
+                          height="15"
+                          viewBox="0 0 17 15"
+                          fill=""
+                        >
+                          <path
+                            d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z"
+                            fill=""
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div
+                      class="accordion__answer tab-description active w-100"
+                      role="tabpanel"
+                      data-tab="0"
+                    >
+                      <div class="d-grid grid-1-half">
+                        <div class="text">
+                          <p class="title-block text-upper">
+                            Our branding services cover every aspect of your
+                            brand’s development, from logo creation to voice and
+                            style guidelines.
+                          </p>
+                        </div>
+
+                        <ul class="text-upper ml-auto body-color">
+                          <li>CMS Integration</li>
+                          <li>Motion & Animations</li>
+                          <li>3D Development</li>
+                          <li>3D Development</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item dsn-up">
+                    <div
+                      class="accordion__question user-no-selection d-flex align-items-center justify-content-between"
+                    >
+                      <h2
+                        class="title tab-title heading-color text-upper"
+                        role="tab"
+                        data-tab="0"
+                      >
+                        Brand
+                      </h2>
+
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="17"
+                          height="15"
+                          viewBox="0 0 17 15"
+                          fill=""
+                        >
+                          <path
+                            d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z"
+                            fill=""
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion__answer tab-description w-100"
+                      role="tabpanel"
+                      data-tab="0"
+                    >
+                      <div class="d-grid grid-1-half">
+                        <div class="text">
+                          <p class="title-block text-upper">
+                            Our branding services cover every aspect of your
+                            brand’s development, from logo creation to voice and
+                            style guidelines.
+                          </p>
+                        </div>
+
+                        <ul class="text-upper ml-auto body-color">
+                          <li>CMS Integration</li>
+                          <li>Motion & Animations</li>
+                          <li>3D Development</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item dsn-up">
+                    <div
+                      class="accordion__question user-no-selection d-flex align-items-center justify-content-between"
+                    >
+                      <h2
+                        class="title tab-title heading-color text-upper"
+                        role="tab"
+                        data-tab="0"
+                      >
+                        Animation
+                      </h2>
+
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="17"
+                          height="15"
+                          viewBox="0 0 17 15"
+                          fill=""
+                        >
+                          <path
+                            d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z"
+                            fill=""
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion__answer tab-description w-100"
+                      role="tabpanel"
+                      data-tab="0"
+                    >
+                      <div class="d-grid grid-1-half">
+                        <div class="text">
+                          <p class="title-block text-upper">
+                            Our branding services cover every aspect of your
+                            brand’s development, from logo creation to voice and
+                            style guidelines.
+                          </p>
+                        </div>
+
+                        <ul class="text-upper ml-auto body-color">
+                          <li>CMS Integration</li>
+                          <li>Motion & Animations</li>
+                          <li>3D Development</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ==========   Skill ========== -->
+          <div class="background-section section-padding">
+            <div class="container">
+              <div class="d-grid grid-half-1">
+                <div
+                  class="box-title d-flex flex-column justify-content-center"
+                >
+                  <div class="section-title d-flex flex-column">
+                    <span class="sub-heading dsn-fill">TOOLS SECTION</span>
+
+                    <h2 class="title dsn-fill">
+                      TOOLS FOR <br />
+                      MY CREATIVE WORK
+                    </h2>
+                  </div>
+                </div>
+
+                <div class="dsn-skills">
+                  <div class="d-grid grid-md-2 dsn-layout-fade-up">
+                    <div
+                      class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up"
+                    >
+                      <div class="box-img mr-15 v-dark background-section">
+                        <img src="assets/img/skills/1.webp" alt="" />
+                      </div>
+
+                      <div class="skills-inner w-100">
+                        <h6 class="dsn-title-award sm-title-block mb-5">
+                          ADOBE PHOTOSHOP
+                        </h6>
+
+                        <span class="number mb-5">84%</span>
+
+                        <div
+                          class="bar-progress background-section has-border-radius"
+                        >
+                          <span
+                            class="fill dsn-animate-skill background-heading has-border-radius"
+                            data-dsn-width="84%"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up"
+                    >
+                      <div class="box-img mr-15 v-dark background-section">
+                        <img src="assets/img/skills/2.webp" alt="" />
+                      </div>
+
+                      <div class="skills-inner w-100">
+                        <h6 class="dsn-title-award sm-title-block mb-5">
+                          Figma
+                        </h6>
+
+                        <span class="number mb-5">90%</span>
+
+                        <div
+                          class="bar-progress background-section has-border-radius"
+                        >
+                          <span
+                            class="fill dsn-animate-skill background-heading has-border-radius"
+                            data-dsn-width="90%"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up"
+                    >
+                      <div class="box-img mr-15 v-dark background-section">
+                        <img src="assets/img/skills/5.webp" alt="" />
+                      </div>
+
+                      <div class="skills-inner w-100">
+                        <h6 class="dsn-title-award sm-title-block mb-5">
+                          webflow
+                        </h6>
+
+                        <span class="number mb-5">92%</span>
+
+                        <div
+                          class="bar-progress background-section has-border-radius"
+                        >
+                          <span
+                            class="fill dsn-animate-skill background-heading has-border-radius"
+                            data-dsn-width="92%"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up"
+                    >
+                      <div class="box-img mr-15 v-dark background-section">
+                        <img src="assets/img/skills/4.webp" alt="" />
+                      </div>
+
+                      <div class="skills-inner w-100">
+                        <h6 class="dsn-title-award sm-title-block mb-5">
+                          Slack Technologies
+                        </h6>
+
+                        <span class="number mb-5">77%</span>
+
+                        <div
+                          class="bar-progress background-section has-border-radius"
+                        >
+                          <span
+                            class="fill dsn-animate-skill background-heading has-border-radius"
+                            data-dsn-width="77%"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ==========  End Skill ========== -->
+
+          <!-- ==========  End EDUCATION ========== -->
+          <section class="dsn-award section-margin">
+            <div class="container">
+              <div class="d-grid grid-md-2 over-hidden">
+                <div
+                  class="box-img h-100 has-border-radius dsn-animate dsn-effect-down"
+                  data-dsn-grid="move-up"
+                >
+                  <img
+                    class="has-border-radius"
+                    src="assets/img/header-personal.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  class="box-text d-flex flex-column justify-content-center pt-80 pb-80"
+                >
+                  <div class="section-title d-flex flex-column mb-30">
+                    <span class="sub-heading dsn-fill">TOOLS SECTION</span>
+
+                    <h2 class="title dsn-fill">EDUCATION</h2>
+                  </div>
+
+                  <div class="award-item d-grid custom-width dsn-up">
+                    <div class="date">2009-2013</div>
+
+                    <div class="">
+                      <h4 class="title-block mb-5">HARVARD UNIVERSITY</h4>
+                      <p>Masters in Web Design (HONORS)</p>
+                    </div>
+                  </div>
+
+                  <div class="award-item d-grid custom-width dsn-up">
+                    <div class="date">2005-2008</div>
+
+                    <div class="">
+                      <h4 class="title-block mb-5">UNIVERSITY OF SHEFFIELD</h4>
+                      <p>Bachelors Of Compute Application</p>
+                    </div>
+                  </div>
+
+                  <div class="award-item d-grid custom-width dsn-up">
+                    <div class="date">2002-2004</div>
+
+                    <div class="">
+                      <h4 class="title-block mb-5">NOVA UNIVERSITY</h4>
+                      <p>IB Diploma Program</p>
+                    </div>
+                  </div>
+
+                  <div class="dsn-up">
+                    <div class="dsn-btn dsn-btn-shape d-flex">
+                      <a
+                        class="button background-main v-dark effect-ajax"
+                        href="contact.html"
+                      >
+                        <span
+                          class="title-btn text-upper p-relative z-index-1 heading-color"
+                          data-animate-text="Contact me"
+                        >
+                          <span>Contact me</span>
+                        </span>
+                      </a>
+
+                      <span class="icon background-main v-dark">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 384 512"
+                        >
+                          <path
+                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ==========  End EDUCATION ========== -->
+
+          <!-- ==========  Work Vertical Effect ========== -->
+          <section
+            class="our-work work-scroll section-padding background-section not-filter dsn-filter"
+          >
+            <div class="container">
+              <div class="section-title dsn-fill d-flex flex-column mb-70">
+                <span class="sub-heading mb-5">What we’re good at</span>
+                <h2 class="title">
+                  Find a service That<br />
+                  works for you
+                </h2>
+              </div>
+            </div>
+
+            <div class="container">
+              <div
+                class="dsn-cards use-v-scroll p-relative"
+                data-dsn-option='{"speed" : 4,"center_screen" : true }'
+              >
+                <div class="dsn-posts">
+                  <article
+                    class="dsn-item-post grid-item over-hidden p-relative has-border-radius"
+                  >
+                    <div class="box-content d-flex">
+                      <div class="img-cat w-100">
+                        <div
+                          class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative"
+                          data-overlay="7"
+                        >
+                          <img
+                            src="assets/img/portfolio/project1/1.jpg"
+                            class="cover-bg-img dsn-swiper-parallax-transform"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute"
+                      >
+                        <div
+                          class="post-info d-flex justify-content-between align-items-center"
+                        >
+                          <h2
+                            class="post-title word-wrap d-inline-block title-block"
+                          >
+                            <a
+                              href="project-1.html"
+                              class="effect-ajax init-color"
+                              data-dsn-ajax="work"
+                              >Binge x The Iconic</a
+                            >
+                          </h2>
+
+                          <div class="cat background-main d-flex">
+                            <span class="background-section heading-color"
+                              >UX / UI Design</span
+                            >
+                            <span class="background-section heading-color"
+                              >Architecture</span
+                            >
+                          </div>
+
+                          <a
+                            href="project-1.html"
+                            class="dsn-btn dsn-btn-shape d-flex effect-ajax"
+                          >
+                            <span class="icon background-section">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                              >
+                                <path
+                                  d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="dsn-item-post grid-item over-hidden p-relative has-border-radius"
+                  >
+                    <div class="box-content d-flex">
+                      <div class="img-cat w-100">
+                        <div
+                          class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative"
+                          data-overlay="5"
+                        >
+                          <img
+                            src="assets/img/portfolio/project2/1.jpg"
+                            class="cover-bg-img dsn-swiper-parallax-transform"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute"
+                      >
+                        <div
+                          class="post-info d-flex justify-content-between align-items-center"
+                        >
+                          <h2
+                            class="post-title word-wrap d-inline-block title-block"
+                          >
+                            <a
+                              href="project-2.html"
+                              class="effect-ajax init-color"
+                              data-dsn-ajax="work"
+                              >Me Myself and i</a
+                            >
+                          </h2>
+
+                          <div class="cat background-main d-flex">
+                            <span class="background-section heading-color"
+                              >Character design</span
+                            >
+                            <span class="background-section heading-color"
+                              >Digital Art</span
+                            >
+                          </div>
+
+                          <a
+                            href="project-2.html"
+                            class="dsn-btn dsn-btn-shape d-flex effect-ajax"
+                          >
+                            <span class="icon background-section">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                              >
+                                <path
+                                  d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="dsn-item-post grid-item over-hidden p-relative has-border-radius"
+                  >
+                    <div class="box-content d-flex">
+                      <div class="img-cat w-100">
+                        <div
+                          class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative"
+                          data-overlay="3"
+                        >
+                          <img
+                            src="assets/img/portfolio/project3/1.jpg"
+                            class="cover-bg-img dsn-swiper-parallax-transform"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute"
+                      >
+                        <div
+                          class="post-info d-flex justify-content-between align-items-center"
+                        >
+                          <h2
+                            class="post-title word-wrap d-inline-block title-block"
+                          >
+                            <a
+                              href="project-3.html"
+                              class="effect-ajax init-color"
+                              data-dsn-ajax="work"
+                              >YOUR DREAM CAR</a
+                            >
+                          </h2>
+
+                          <div class="cat background-main d-flex">
+                            <span class="background-section heading-color"
+                              >Photography</span
+                            >
+                            <span class="background-section heading-color"
+                              >branding</span
+                            >
+                          </div>
+
+                          <a
+                            href="project-3.html"
+                            class="dsn-btn dsn-btn-shape d-flex effect-ajax"
+                          >
+                            <span class="icon background-section">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                              >
+                                <path
+                                  d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="dsn-item-post grid-item over-hidden p-relative has-border-radius"
+                  >
+                    <div class="box-content d-flex">
+                      <div class="img-cat w-100">
+                        <div
+                          class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative"
+                          data-overlay="6"
+                        >
+                          <img
+                            src="assets/img/portfolio/project4/1.jpg"
+                            class="cover-bg-img dsn-swiper-parallax-transform"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute"
+                      >
+                        <div
+                          class="post-info d-flex justify-content-between align-items-center"
+                        >
+                          <h2
+                            class="post-title word-wrap d-inline-block title-block"
+                          >
+                            <a
+                              href="project-4.html"
+                              class="effect-ajax init-color"
+                              data-dsn-ajax="work"
+                              >The Hills - Nissan</a
+                            >
+                          </h2>
+
+                          <div class="cat background-main d-flex">
+                            <span class="background-section heading-color"
+                              >Photography</span
+                            >
+                            <span class="background-section heading-color"
+                              >branding</span
+                            >
+                          </div>
+
+                          <a
+                            href="project-4.html"
+                            class="dsn-btn dsn-btn-shape d-flex effect-ajax"
+                          >
+                            <span class="icon background-section">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                              >
+                                <path
+                                  d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="dsn-item-post grid-item over-hidden p-relative has-border-radius"
+                  >
+                    <div class="box-content d-flex">
+                      <div class="img-cat w-100">
+                        <div
+                          class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative"
+                          data-overlay="6"
+                        >
+                          <img
+                            src="assets/img/portfolio/project5/1.jpg"
+                            class="cover-bg-img dsn-swiper-parallax-transform"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute"
+                      >
+                        <div
+                          class="post-info d-flex justify-content-between align-items-center"
+                        >
+                          <h2
+                            class="post-title word-wrap d-inline-block title-block"
+                          >
+                            <a
+                              href="project-5.html"
+                              class="effect-ajax init-color"
+                              data-dsn-ajax="work"
+                              >Church Copenhagen Denmark</a
+                            >
+                          </h2>
+
+                          <div class="cat background-main d-flex">
+                            <span class="background-section heading-color"
+                              >Photography</span
+                            >
+                            <span class="background-section heading-color"
+                              >Architecture</span
+                            >
+                          </div>
+
+                          <a
+                            href="project-5.html"
+                            class="dsn-btn dsn-btn-shape d-flex effect-ajax"
+                          >
+                            <span class="icon background-section">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                              >
+                                <path
+                                  d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="dsn-item-post grid-item over-hidden p-relative has-border-radius"
+                  >
+                    <div class="box-content d-flex">
+                      <div class="img-cat w-100">
+                        <div
+                          class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative"
+                          data-overlay="5"
+                        >
+                          <img
+                            src="assets/img/portfolio/project6/1.jpg"
+                            class="cover-bg-img dsn-swiper-parallax-transform"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute"
+                      >
+                        <div
+                          class="post-info d-flex justify-content-between align-items-center"
+                        >
+                          <h2
+                            class="post-title word-wrap d-inline-block title-block"
+                          >
+                            <a
+                              href="project-6.html"
+                              class="effect-ajax init-color"
+                              data-dsn-ajax="work"
+                              >LOST RENDER</a
+                            >
+                          </h2>
+
+                          <div class="cat background-main d-flex">
+                            <span class="background-section heading-color"
+                              >Photography</span
+                            >
+                            <span class="background-section heading-color"
+                              >Architecture</span
+                            >
+                          </div>
+
+                          <a
+                            href="project-6.html"
+                            class="dsn-btn dsn-btn-shape d-flex effect-ajax"
+                          >
+                            <span class="icon background-section">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                              >
+                                <path
+                                  d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article
+                    class="dsn-item-post grid-item over-hidden p-relative has-border-radius"
+                  >
+                    <div class="box-content d-flex">
+                      <div class="img-cat w-100">
+                        <div
+                          class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative"
+                          data-overlay="4"
+                        >
+                          <img
+                            src="assets/img/portfolio/project7/1.jpg"
+                            class="cover-bg-img dsn-swiper-parallax-transform"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute"
+                      >
+                        <div
+                          class="post-info d-flex justify-content-between align-items-center"
+                        >
+                          <h2
+                            class="post-title word-wrap d-inline-block title-block"
+                          >
+                            <a
+                              href="project-7.html"
+                              class="effect-ajax init-color"
+                              data-dsn-ajax="work"
+                              >Samokat office</a
+                            >
+                          </h2>
+
+                          <div class="cat background-main d-flex">
+                            <span class="background-section heading-color"
+                              >Architecture</span
+                            >
+                            <span class="background-section heading-color"
+                              >Interior Design</span
+                            >
+                          </div>
+
+                          <a
+                            href="project-7.html"
+                            class="dsn-btn dsn-btn-shape d-flex effect-ajax"
+                          >
+                            <span class="icon background-section">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                              >
+                                <path
+                                  d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ========== End Work Vertical Effect ========== -->
+
+          <!-- ==========  testimonial ========== -->
+          <section
+            class="testimonal-personal section-margin dsn-swiper"
+            data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":false,"slidesPerGroup":1,"slidesPerView":1,"speed":1000,"effect":"slide"}'
+          >
+            <div class="container">
+              <div class="d-flex">
+                <div class="prev-paginate">
+                  <span
+                    class="dsn-icon dsn-icon-heading-color background-section"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="15"
+                      viewBox="0 0 17 15"
+                      fill=""
+                    >
+                      <path
+                        d="M6.81496 0.699692L7.66349 1.54822L2.31371 6.898L16.4017 6.88707L16.4008 8.08442L2.31278 8.09535L7.65426 13.4368L6.80442 14.2867L0.0161911 7.49846L6.81496 0.699692Z"
+                        fill=""
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+
+                <div class="swiper-container swiper">
+                  <div class="swiper-wrapper">
+                    <div
+                      class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="box-img">
+                        <img
+                          class="has-border-radius"
+                          src="assets/img/testimonial/2.jpg"
+                          alt=""
+                        />
+                        <h3 class="title">
+                          “CRESANT HELPED US DOUBLE SALES IN ONE YEAR”
+                        </h3>
+
+                        <div class="auther mt-20">
+                          <h5 class="text-upper mb-5">MTL Graphic</h5>
+                          <span class="text-upper">Envato User</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="box-img">
+                        <img
+                          class="has-border-radius"
+                          src="assets/img/testimonial/2.jpg"
+                          alt=""
+                        />
+                        <h3 class="title">
+                          “CRESANT HELPED US DOUBLE SALES IN ONE YEAR”
+                        </h3>
+
+                        <div class="auther mt-20">
+                          <h5 class="text-upper mb-5">MTL Graphic</h5>
+                          <span class="text-upper">Envato User</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="next-paginate">
+                  <span
+                    class="dsn-icon dsn-icon-heading-color background-section"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="15"
+                      viewBox="0 0 17 15"
+                      fill=""
+                    >
+                      <path
+                        d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z"
+                        fill=""
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ==========  End testimonial ========== -->
+
+          <!-- ==========   Blog ========== -->
+          <section class="dsn-style-list background-section section-padding">
+            <div class="container">
+              <div class="section-title mb-70 d-flex flex-column">
+                <span class="sub-heading dsn-fill">Our BLOG</span>
+
+                <h2 class="title dsn-fill">
+                  Find a service That<br />
+                  works for you
+                </h2>
+              </div>
+
+              <div class="dsn-posts" data-dsn-fx="22">
+                <article
+                  class="dsn-item-post over-hidden p-relative box-hover-image w-100 d-grid grid-half-1 dsn-up"
+                >
+                  <div class="box-img has-border-radius">
+                    <img
+                      class="cover-bg-img has-border-radius"
+                      src="assets/img/blog/1.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div
+                    class="post-content p-relative z-index-1 d-flex flex-column w-100"
+                  >
+                    <div
+                      class="post-title-info h-100 d-flex flex-column justify-content-between"
+                    >
+                      <div class="article-meta mb-10">
+                        <span class="clip">Marketing</span>
+                        <div class="dot"></div>
+                        <span class="clip">12.21.2023 </span>
+                      </div>
+
+                      <div class="p-relative">
+                        <h3 class="text-upper">
+                          <a href="#" class="effect-ajax"
+                            >How to Connect with Your <br />
+                            Brand Audience</a
+                          >
+                        </h3>
+
+                        <p class="mt-10 max-w570">
+                          With each project, I embark on a journey to weave a
+                          unique narrative, carefully curating experiences that
+                          transcend the ordinary.
+                        </p>
+                      </div>
+
+                      <a href="#" class="dsn-btn dsn-btn-shape d-flex">
+                        <span class="icon v-light background-section">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512"
+                          >
+                            <path
+                              d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="dsn-item-post over-hidden p-relative box-hover-image w-100 d-grid grid-half-1 dsn-up"
+                >
+                  <div class="box-img has-border-radius">
+                    <img
+                      class="cover-bg-img has-border-radius"
+                      src="assets/img/blog/2.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div
+                    class="post-content p-relative z-index-1 d-flex flex-column w-100"
+                  >
+                    <div
+                      class="post-title-info h-100 d-flex flex-column justify-content-between"
+                    >
+                      <div class="article-meta mb-10">
+                        <span class="clip">Marketing</span>
+                        <div class="dot"></div>
+                        <span class="clip">12.21.2023 </span>
+                      </div>
+
+                      <div class="p-relative">
+                        <h3 class="text-upper">
+                          <a href="#" class="effect-ajax"
+                            >How to Connect with Your <br />
+                            Brand Audience</a
+                          >
+                        </h3>
+
+                        <p class="mt-10 max-w570">
+                          With each project, I embark on a journey to weave a
+                          unique narrative, carefully curating experiences that
+                          transcend the ordinary.
+                        </p>
+                      </div>
+
+                      <a href="#" class="dsn-btn dsn-btn-shape d-flex">
+                        <span class="icon v-light background-section">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512"
+                          >
+                            <path
+                              d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="dsn-item-post over-hidden p-relative box-hover-image w-100 d-grid grid-half-1 dsn-up"
+                >
+                  <div class="box-img has-border-radius">
+                    <img
+                      class="cover-bg-img has-border-radius"
+                      src="assets/img/blog/3.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div
+                    class="post-content p-relative z-index-1 d-flex flex-column w-100"
+                  >
+                    <div
+                      class="post-title-info h-100 d-flex flex-column justify-content-between"
+                    >
+                      <div class="article-meta mb-10">
+                        <span class="clip">Marketing</span>
+                        <div class="dot"></div>
+                        <span class="clip">12.21.2023 </span>
+                      </div>
+
+                      <div class="p-relative">
+                        <h3 class="text-upper">
+                          <a href="#" class="effect-ajax"
+                            >How to Connect with Your <br />
+                            Brand Audience</a
+                          >
+                        </h3>
+
+                        <p class="mt-10 max-w570">
+                          With each project, I embark on a journey to weave a
+                          unique narrative, carefully curating experiences that
+                          transcend the ordinary.
+                        </p>
+                      </div>
+
+                      <a href="#" class="dsn-btn dsn-btn-shape d-flex">
+                        <span class="icon v-light background-section">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512"
+                          >
+                            <path
+                              d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          <!-- ==========  End Blog ========== -->
+
+          <section class="next-page v-dark pt-section pb-50">
+            <div class="container">
+              <div
+                class="tob-box d-flex justify-content-between align-items-end border-bottom pb-50 mb-50"
+              >
+                <h2 class="title text-upper">
+                  time to <br />
+                  roar!
+                </h2>
+
+                <div class="dsn-btn dsn-btn-shape d-flex">
+                  <a
+                    class="button background-main v-light effect-ajax"
+                    href="contact.html"
+                  >
+                    <span
+                      class="title-btn p-relative z-index-1 heading-color"
+                      data-animate-text="Let's talk!"
+                    >
+                      <span>Let's talk!</span>
+                    </span>
+                  </a>
+
+                  <span class="icon background-main v-light">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 384 512"
+                    >
+                      <path
+                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="container over-hidden">
+              <div class="bottom-box">
+                <div class="d-flex gap-10 justify-content-between flex-wrap">
+                  <div class="info-item">
+                    <h6 class="mb-10">Email Address</h6>
+                    <a class="text-upper" href="#">hello@dsngrid.com</a>
+                  </div>
+
+                  <div class="info-item">
+                    <h6 class="mb-10">Call Info</h6>
+                    <a class="text-upper" href="#">91 98241 82099</a>
+                  </div>
+
+                  <div class="info-item">
+                    <h6 class="mb-10">Skype</h6>
+                    <a class="text-upper" href="#">dsngrid.theme</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <footer class="footer-personal v-light mt-50">
+                <div class="d-grid grid-md-3 align-items-center">
+                  <div class="links">
+                    <ul class="d-flex">
+                      <li><a href="#">HOME</a></li>
+                      <li><a href="#">ABOUT</a></li>
+                      <li><a href="#">WORK</a></li>
+                      <li><a href="#">CONTACT</a></li>
+                    </ul>
+                  </div>
+
+                  <div
+                    class="dsn-logo main-logo d-flex align-items-center justify-content-center"
+                  >
+                    <div class="main-logo">
+                      <a
+                        href="#"
+                        class="custom-logo-link main-brand effect-ajax"
+                      >
+                        <img
+                          class="custom-logo logo-light"
+                          src="assets/img/logo-light.png"
+                          alt=""
+                        />
+                        <img
+                          class="custom-logo logo-dark"
+                          src="assets/img/logo.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="copyright">
+                    <p class="over-hidden">
+                      © 2024 Digital Agency Designed by
+                      <a
+                        href="#0"
+                        class="link-hover"
+                        data-hover-text="DSN Grid"
+                        target="_blank"
+                        >DSN Grid</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- ========== Cursor ========== -->
+    <div id="dsn_cursor" class="ball"></div>
+    <div id="dsn_cursor_inner" class="ball"></div>
+    <!-- ========== End Cursor ========== -->
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/plugins/dsn-grid.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

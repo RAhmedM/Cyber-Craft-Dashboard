@@ -1,0 +1,77 @@
+.container-content {
+  display: flex !important;
+  opacity: 0;
+  visibility: hidden;
+
+  @include media_991(){
+    display: none !important;
+  }
+
+  &:after, & {
+    transition: 1s;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/pngtree-dotted.png);
+    background-color: $border-color;
+    opacity: .07;
+
+    @include media_991(min) {
+      right: 0;
+      top: 0;
+      width: 45%;
+      height: 0;
+      z-index: -1;
+    }
+
+    @include media_991() {
+      width: 0;
+      height: 1px;
+    }
+
+
+  }
+
+
+  .sm-title-block {
+    color: #a56433;
+  }
+
+  .nav-social ul li {
+    position: relative;
+    color: $heading-color;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-right: 15px;
+    padding-right: 5px;
+  }
+}
+
+&.dsn-open .container-content {
+  opacity: 1;
+  visibility: visible;
+
+
+  @include media_991(min) {
+    &:after {
+      height: 100%;
+    }
+  }
+
+  @include media_991() {
+    &:after {
+      width: 100%;
+      top: calc(-1 * #{$margin-padding} / 2);
+    }
+  }
+
+
+  &:after, & {
+    transition-delay: 0.7s;
+  }
+
+
+}

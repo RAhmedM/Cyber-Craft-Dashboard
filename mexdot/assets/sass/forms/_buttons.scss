@@ -1,0 +1,422 @@
+.dsn-def-btn,
+.dsn-normal-btn {
+  >* {
+
+    &,
+    .dsn-btn {
+      display: flex;
+      align-items: center;
+
+    }
+
+  }
+
+}
+
+.dsn-normal-btn>* .dsn-btn {
+  justify-content: center;
+}
+
+
+.dsn-btn {
+  position: relative;
+  text-align: center;
+
+
+  .title-btn,
+  .dsn-icon {
+    z-index: 2;
+  }
+
+  .icon-circle {
+    z-index: 1 !important;
+  }
+
+  .btn-icon-left {
+    margin-right: 10px;
+  }
+
+  .btn-icon-right {
+    margin-left: 10px;
+  }
+
+  .title-btn {
+    position: relative;
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+}
+
+$w-btn: 50px;
+
+.dsn-def-btn {
+  --dsn-icon-size: 15px;
+
+  .dsn-btn,
+  .dsn-icon:before,
+  .dsn-icon i,
+  .dsn-icon svg {
+    transition: 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition-property: width, padding, margin;
+  }
+
+  .icon-circle {
+    display: none;
+  }
+
+
+  .dsn-icon {
+    width: $w-btn;
+    height: $w-btn;
+    line-height: $w-btn;
+    border-radius: $w-btn;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>* {
+      position: relative;
+      z-index: 1;
+    }
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+    }
+
+    &.btn-icon-left:before {
+      left: 0;
+    }
+
+    &.btn-icon-right:before {
+      right: 0;
+    }
+  }
+
+}
+
+.dsn-def-btn:not(.dsn-hover-icon) {
+  .dsn-btn:hover {
+    &.has-icon-left {
+      padding-right: $w-btn;
+
+      .dsn-icon {
+
+        i,
+        svg {
+          margin-left: calc(#{$w-btn} / 2);
+        }
+      }
+    }
+
+    &.has-icon-right {
+      padding-left: calc(#{$w-btn} / 2);
+
+      .dsn-icon {
+
+        i,
+        svg {
+          margin-right: calc(#{$w-btn} / 2);
+        }
+      }
+    }
+
+
+    .dsn-icon:before {
+      width: 100%;
+    }
+
+  }
+}
+
+.dsn-def-btn.dsn-hover-icon {
+
+  .dsn-btn {
+    .title-btn {
+      position: relative;
+      padding-bottom: 5px;
+
+      &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $border-color;
+        transform-origin: right;
+      }
+    }
+
+    .dsn-icon {
+      position: absolute;
+      margin-bottom: 5px;
+
+
+      &.btn-icon-left,
+      &.btn-icon-left:after {
+        left: 0;
+      }
+
+      &.btn-icon-right,
+      &.btn-icon-right:after {
+        right: 0;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        line-height: 7px;
+        border-radius: $w-btn;
+        border: 1px solid $heading-color;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+      }
+
+
+      &:before {
+
+        transform: scale(0);
+      }
+
+      i,
+      svg {
+        opacity: 0;
+      }
+
+
+    }
+
+    .dsn-icon,
+    .dsn-icon:before,
+    .dsn-icon:after,
+    i,
+    svg,
+    .title-btn,
+    .title-btn:after {
+      transition: 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    }
+
+    &.has-icon-left {
+      .title-btn {
+        margin-left: 15px;
+      }
+    }
+
+    &.has-icon-right {
+      .title-btn {
+        margin-right: 15px;
+      }
+    }
+  }
+
+
+  .dsn-btn:hover {
+
+    &.has-icon-left {
+      .title-btn {
+        margin-left: calc(#{$w-btn} + 10px);
+      }
+    }
+
+    &.has-icon-right {
+      .title-btn {
+        margin-right: calc(#{$w-btn} + 10px);
+      }
+    }
+
+    .dsn-icon {
+      width: $w-btn;
+      height: $w-btn;
+      line-height: $w-btn;
+      border-radius: $w-btn;
+      z-index: 0;
+      border: 0;
+
+      &.btn-icon-left:after {
+        left: 25px;
+      }
+
+      &.btn-icon-right:after {
+        right: 25px;
+      }
+
+      &:before,
+      i,
+      svg {
+        transform: none;
+        opacity: 1;
+      }
+    }
+
+    .title-btn:after {
+      transform: scale(0);
+    }
+  }
+
+
+}
+
+.dsn-normal-btn {
+  .dsn-btn {
+    padding: 12px 18px;
+  }
+}
+
+
+.dsn-default-btn {
+  .dsn-btn {
+
+    &.button-def-padding {
+      padding: 10px 24px;
+    }
+
+    &.border-rdu {
+      border-radius: 31px;
+    }
+
+    .dsn-icon {
+      padding: 7px 17px;
+      border-radius: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.no-padding {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.dsn-btn {
+  .title-btn[data-animate-text] {
+    overflow: hidden;
+
+    &>span,
+    &:before {
+      transition: 0.8s cubic-bezier(0.65, 0, 0.076, 1);
+      transform-origin: 0 center;
+    }
+
+    &:before {
+      position: absolute;
+      content: attr(data-animate-text);
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      transform: rotateZ(7deg);
+      ;
+      opacity: 0;
+    }
+  }
+
+  &:hover .title-btn[data-animate-text] {
+    &>span {
+      transform: rotateZ(-7deg);
+      opacity: 0;
+    }
+
+    &:before {
+      transform: none;
+      opacity: 1;
+    }
+  }
+
+}
+
+.dsn-btn-shape {
+  position: relative;
+  width: max-content;
+  filter: url(#buttonFilter);
+  transition: 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+
+  &.no-padding {
+    .button {
+      padding: 0 15px 0 0;
+    }
+  }
+
+  &.rotate-icon {
+    .icon {
+      svg {
+        rotate: 90deg;
+      }
+    }
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.135, .9, .15, 1);
+    transition-duration: .9s;
+
+    svg {
+      fill: $heading-color;
+      width: 12px;
+      height: 12px;
+    }
+
+    &.theme-color {
+      svg {
+        fill: $theme-color;
+      }
+    }
+  }
+
+  .button {
+    position: relative;
+    text-align: center;
+    color: $heading-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    height: 40px;
+    line-height: 1;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &:hover {
+    .icon {
+      transform: translateX(0.75rem)  rotate(45deg);
+    }
+  }
+}
+
+.dsn-btn-play {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(251, 251, 251, 0.18);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: 19px;
+    margin-right: 10px;
+  }
+}

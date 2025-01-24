@@ -1,0 +1,32 @@
+
+.post-item {
+
+  .box-img {
+    height: 450px;
+
+    &.h-500 {
+      @include media_768 {
+        height: 380px;
+      }
+    }
+  }
+
+  .content {
+    .sm-title-block {
+      font-size: 18px;
+    }
+      .date {
+          font-size: 13px;
+
+          &::after {
+            content: '--';
+            margin-left: 15px;
+          }
+      }
+
+      .cat {
+        font-size: 13px;
+
+      }
+  }
+}

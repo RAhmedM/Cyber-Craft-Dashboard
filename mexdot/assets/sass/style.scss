@@ -1,0 +1,191 @@
+/*-----------------------------------------------------------
+
+  Template Name: MexDot - Ajax Portfolio Showcase HTML Template
+  Template URI: https://template.dsngrid.com//mexdot
+  Description: MexDot - Ajax Portfolio Showcase HTML Template
+  Author: design_grid
+  Author URI: https://themeforest.net/user/design_grid
+  Version: 1.0.0
+
+-------------------------------------------------------------*/
+/*-----------------------------------------------------------
+
+    1.  Variables
+    2.  Mixins
+      - Mixins Master
+      - Utilities
+    3.  Normalize
+    4.  Helpers
+    5. Typography
+      - Copy
+	  - Headings
+	6. Core
+    7. Navigation
+      - Links
+      - Menus
+	  - Next & Previous
+    8. Content
+      - pages
+      - Comments
+      - Archives
+      - Footer
+    9.Forms
+      - Button
+      - Fields
+    10.Blocks
+    11.Media
+      - captions
+    12.Version Light
+
+-------------------------------------------------------------*/
+
+@import "mixins/_utilities.scss";
+
+
+:root, :root .v-light, :root .v-light-head {
+  --bg-color: #F3F3F3;
+  --assistant-color: #E9E9E9;
+
+  --theme-color: #b3de4f;
+
+  --theme-color-font: #fff;
+
+  --font-color: #5c5c5c;
+  --heading-color: #000;
+  --border-color: #dcdcdc;
+  --smooth-color: #141414;
+  --reverse-color: #141414;
+  --reverse-heading-color: #fff;
+
+  --bg-btn: #f6fafd;
+
+
+  .background-theme, &.background-theme, .calendar_wrap table tr td#today {
+    --heading-color: #fff;
+    --font-color: #fff;
+    color: var(--font-color);
+  }
+
+  /**
+     Elementor color
+  */
+
+  --divider-color: var(--border-color);
+}
+
+@mixin darkVersion() {
+
+  --bg-color: #111;
+  --assistant-color: #171717;
+  --theme-color: #b3de4f;
+  --font-color: #d9d9d9;
+  --heading-color: #fff;
+  --border-color: #373737;
+  --smooth-color: #f9f9f9;
+  --reverse-color: #f9f9f9;
+  --reverse-heading-color: #000;
+  --bg-btn: #0a0909;
+}
+
+
+:root .v-dark, :root .v-dark-head {
+
+  @include darkVersion;
+
+}
+
+
+@media only screen and (max-width: 991px) {
+  .v-dark-head-mobile {
+    @include darkVersion;
+  }
+}
+
+
+:root {
+
+  --body-font: 'Poppins', sans-serif;
+  --heading-font: "Antonio", sans-serif;
+  --font-code: Menlo, monaco, Consolas, Lucida Console, monospace;
+  --font-pre: "Satisfy", cursive;
+
+  --font-size-base: 15px;
+  --font-size-h1: 40px;
+  --font-size-h2: 35px;
+  --font-size-h3: 30px;
+  --font-size-h4: 25px;
+  --font-size-h5: 22px;
+  --font-size-h6: 16px;
+  --menu-size: 12px;
+
+  --line-height-base: 1.5;
+  --line-height-content: 1.8;
+  --font-weight-heading: 600;
+  --font-weight-body: 500;
+
+  //--> structure
+  --smooth-width: 4px;
+
+
+  @include media_1400(min) {
+    --dsn-gap-container: 100px;
+    .container, .dsn-left-container, .dsn-right-container {
+      --dsn-gap-container: 50px;
+    }
+    --title-heading: 65px;
+  }
+  @include media_1400 {
+    --dsn-gap-container: 50px;
+    --title-heading: 65px;
+  }
+
+  @include media_1200 {
+    --title-heading: 65px;
+  }
+
+  @include media_991(min) {
+    --margin-padding: 120px;
+    --box-padding: 80px 40px;
+    .d-lg-none{
+      display: none;
+    }
+
+  }
+  @include media_991() {
+    --margin-padding: 80px;
+    --box-padding: 60px var(--dsn-gap-container);
+    --title-heading: 45px;
+  }
+
+  @include media_768X991 {
+    --dsn-gap-container: 40px;
+  }
+  @include media_575X768 {
+    --dsn-gap-container: 25px;
+    --title-heading: 47px;
+  }
+  @include media_575 {
+    --dsn-gap-container: 15px;
+    --title-heading: 37px;
+  }
+
+  --bg-overlay: #000;
+  --overlay-blend-mode: unset;
+
+
+}
+
+
+// elements
+@import "mixins/_mixins-master.scss";
+@import "variables-site/_variables-site.scss";
+@import "_core.scss";
+@import "forms/_forms.scss";
+@import "navigation/_navigation.scss";
+@import "site/_site.scss";
+@import "blocks/blocks";
+@import "media/_dsn-captions.scss";
+
+
+
+

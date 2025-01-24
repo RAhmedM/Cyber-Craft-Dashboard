@@ -1,0 +1,47 @@
+.dsn-accordion {
+  line-height: 1.2;
+
+  .accordion__answer {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .accordion__item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .accordion__question {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
+    &:not(:first-of-type){
+      padding: 8px 15px 0 0;
+    }
+
+
+    h4 {
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+
+    &:not(.expanded):before {
+      transform: rotate(45deg);
+      border-width: 0 2px 2px 0;
+      padding: 3px;
+    }
+
+
+
+    &.expanded:before {
+      border-width: 1px;
+      width: 10px;
+    }
+
+  }
+
+}

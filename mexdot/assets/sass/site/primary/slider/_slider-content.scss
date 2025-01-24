@@ -1,0 +1,137 @@
+.dsn-slider-content {
+  pointer-events: none;
+  z-index: 5;
+
+  p.item {
+    @include media_768{
+      display: none;
+    }
+  }
+  
+  .is-sub {
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .arrow {
+    margin-bottom: 20px;
+
+    .icon {
+      svg {
+        fill: $heading-color;
+        width: 18px;
+        rotate: 90deg;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .description.max-w570{
+    max-width: 350px;
+  }
+
+  .swiper-animate-head {
+    transition: 0.5s;
+  }
+
+  .slide-content.dsn-active {
+    z-index: 1;
+    .head-meta , p.description, .dsn-btn  ,.has-box-mod{
+      pointer-events: auto;
+    }
+
+
+  }
+
+  .slide-content:not(.dsn-active) {
+    z-index: 0;
+    pointer-events: none;
+
+    .dsn-chars-wrapper, [data-dsn-split="chars"], .swiper-animate-head {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .title .icon-circle {
+      width: 0;
+    }
+
+
+  }
+
+  .circle-before {
+    &.mt-10:before {
+      margin-top: 5px;
+    }
+
+    &.mb-10:before {
+      margin-top: -5px;
+    }
+
+  }
+
+
+
+  .head-meta:not(.border-bottom , .border-top) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .dsn-btn .line-shape .dsn-icon {
+    display: none;
+  }
+
+}
+
+/**
+  Animation
+ */
+.dsn-slider-content.justify-content-center{
+  .head-meta{
+    justify-content: center;
+  }
+
+}
+.dsn-slider-content .slide-content {
+  width: 100%;
+  left: 0;
+  padding-right: var(--dsn-gap-container);
+  padding-left: var(--dsn-gap-container);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  pointer-events: none;
+
+  .swiper-animate-head, .head-meta span,p.description, .dsn-btn {
+    transition: 0.85s $easeInOutBack;
+    @include transition-delay(3ms, var(--item-index), 100ms)
+  }
+
+  &:not(.dsn-active-animate) {
+
+    .head-meta span, p.description, .dsn-btn {
+      opacity: 0;
+    }
+
+
+
+    .head-meta span ,p.description, .dsn-btn {
+      transform: translateY(30%);
+    }
+
+
+
+  }
+
+  .half-right & .title , .half-left .title{
+    @include media_991(min){
+      font-size: 55px;
+      line-height: 65px;
+    }
+  }
+}
+

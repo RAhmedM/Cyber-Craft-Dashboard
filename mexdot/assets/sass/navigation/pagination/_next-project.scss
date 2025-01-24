@@ -1,0 +1,22 @@
+.next-projects {
+  .box-content {
+    .btn-arrow {
+      position: absolute;
+      right: 0;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include media_768 {
+        display: none;
+      }
+
+      .icon {
+        line-height: .8;
+      }
+    }
+  }
+}

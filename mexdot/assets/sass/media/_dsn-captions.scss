@@ -1,0 +1,15 @@
+.cap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  padding: 4px 15px;
+  color: #fff;
+  z-index: 10;
+
+  span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}

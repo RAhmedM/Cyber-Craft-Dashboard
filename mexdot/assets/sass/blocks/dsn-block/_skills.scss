@@ -1,0 +1,119 @@
+.dsn-skills-item {
+  position: relative;
+  width: 100%;
+
+  .background-theme {
+    --heading-color: inhert !important;
+    --font-color: inhert !important;
+  }
+
+  .box-img {
+    padding: 20px 5px;
+    border-radius: 5px;
+    
+    img {
+      width: 58px;
+    }
+  
+  }
+
+  &.border-right{
+    padding-right: 30px;
+    @include media_768 {
+      padding-right: 0;
+      border: 0;
+    }
+  }
+  &.border-left{
+    padding-left: 30px;
+    @include media_768 {
+      padding-left: 0;
+      border: 0;
+    }
+  }
+
+  .bar-progress {
+    position: relative;
+    width: 100%;
+    height: 6px;
+
+    .fill {
+      position: absolute;
+      width: 0;
+      height: 100%;
+
+      &:not(.background-section):not(.background-main):not(.background-theme):not(.background-heading) {
+        background-image: url("../img/patterns.png");
+      }
+
+      &.background-heading {
+        background-color: $heading-color;
+      }
+
+
+      .number {
+        font-size: 14px;
+        position: absolute;
+        top: -10px;
+        right: -15px;
+        color: $heading-color;
+        text-shadow: 1px 1px 7px var(--bg-color);
+      }
+    }
+  }
+
+  .bar-svg {
+    $progress-bar-stroke-width: 1.8;
+    $progress-bar-size: 160px;
+    text-align: center;
+
+
+    .fill-bar {
+      width: $progress-bar-size;
+      height: $progress-bar-size;
+      margin: auto;
+      background-color: transparent;
+
+      svg {
+        transform: rotate(-90deg);
+      }
+
+      .progress-bar__background {
+        fill: none;
+        stroke: $bg-color;
+        stroke-width: $progress-bar-stroke-width;
+        opacity: 0.23;
+      }
+
+      .progress-bar__progress {
+        fill: none;
+        stroke-dasharray: 100 100;
+        stroke-linecap: round;
+        stroke-width: $progress-bar-stroke-width;
+        stroke: $theme-color;
+
+      }
+
+      &.background-section .progress-bar__progress {
+        stroke: $assistant-color;
+      }
+
+      &.background-main .progress-bar__progress {
+        stroke: $bg-color;
+      }
+
+      &.background-heading .progress-bar__progress {
+        stroke: $heading-color;
+      }
+
+      .number.font-number {
+        font-size: 30px;
+      }
+
+    }
+
+  }
+
+
+
+}
